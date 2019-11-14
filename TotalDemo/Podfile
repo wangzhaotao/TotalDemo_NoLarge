@@ -1,0 +1,18 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'TotalDemo' do
+
+  pod 'Masonry'
+  pod 'AFNetworking'
+  pod 'MJRefresh'
+  
+  #Firebase 远程配置
+  pod 'Firebase/Core'
+  pod 'Firebase/RemoteConfig'
+  pod 'Fabric', '~> 1.10.2'
+  pod 'Crashlytics', '~> 3.13.4'
+
+
+end
+
