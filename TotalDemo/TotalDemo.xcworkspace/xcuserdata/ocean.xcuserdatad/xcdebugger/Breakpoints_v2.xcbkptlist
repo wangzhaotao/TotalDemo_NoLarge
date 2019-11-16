@@ -347,51 +347,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0D7ECAB5-1944-4D88-8F48-8F0ACF88B26F"
-            shouldBeEnabled = "Yes"
+            uuid = "D27E975B-C6D6-4160-8C24-93A0B2467A1C"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TotalDemo/UI/Location/WTLocationVC.m"
-            timestampString = "593061576.394747"
+            filePath = "TotalDemo/RootTabbarController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
-            landmarkName = "-mapView:viewForAnnotation:"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "-viewDidAppear:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B93A3883-D563-48CB-BD7D-24755AD921B7"
-            shouldBeEnabled = "Yes"
+            uuid = "B18D88DF-A582-426A-ACD3-009343FB7FEB"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TotalDemo/UI/Location/WTLocationVC.m"
-            timestampString = "593061576.395926"
+            filePath = "TotalDemo/RootTabbarController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
-            landmarkName = "-mapView:viewForAnnotation:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5E067ADD-C07D-444B-8F38-252E8884A700"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TotalDemo/UI/Location/WTLocationVC.m"
-            timestampString = "593061576.396181"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
-            landmarkName = "-mapView:viewForAnnotation:"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "-viewWillAppear:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

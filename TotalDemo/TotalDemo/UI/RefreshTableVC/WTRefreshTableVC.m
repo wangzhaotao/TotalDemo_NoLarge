@@ -10,6 +10,8 @@
 #import <MJRefresh/MJRefresh.h>
 #import "WTRefreshHeader.h"
 #import "WTGifRefreshHeader.h"
+#import "LOTAnimationView.h"
+#import "WTRefreshHeader2.h"
 
 #define KMainScreenWidth     [UIScreen mainScreen].bounds.size.width
 #define KMainScreenWHeight   [UIScreen mainScreen].bounds.size.height
@@ -34,12 +36,19 @@
     
     [self initData];
     
-    [self createRefreshHead2];
+    [self createRefreshHead4];
     
     
 }
 
 #pragma mark refresh
+-(void)createRefreshHead4 {
+    
+    WTRefreshHeader2 *header = [WTRefreshHeader2 headerWithRefreshingBlock:^{
+        [self toRefreshWiFiListData];
+    }];
+    self.tableView.mj_header = header;
+}
 -(void)createRefreshHead3 {
     //模拟下拉刷新
     WTGifRefreshHeader *header = [WTGifRefreshHeader headerWithRefreshingBlock:^{
@@ -76,7 +85,7 @@
 -(void)toRefreshWiFiListData {
     
     __weak typeof(self) weakSelf = self;
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0*NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0*NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         for (int i=0; i<5; i++) {
             [weakSelf.dataArray addObject:[NSString stringWithFormat:@"%d", i]];
         }
@@ -133,7 +142,7 @@
     UIImageView *gifView = [[UIImageView alloc]init];
     [self.view addSubview:gifView];
     _gifView = gifView;
-    [self testAnimation];
+    [self loadAnimationImages];
     
     
     
@@ -141,19 +150,23 @@
     //layout
     [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.trailing.top.equalTo(@0);
-        make.height.equalTo(@(3*KMainScreenWHeight/4));
+        make.height.equalTo(@(2*KMainScreenWHeight/3));
     }];
+    CGFloat width = KMainScreenWidth/4;
+    CGFloat offsetY = 2*KMainScreenWHeight/3+(KMainScreenWHeight/3-width)/2;
     [gifView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(@0);
-        make.top.equalTo(tableView.mas_bottom).offset(5);
-        make.width.height.equalTo(@(KMainScreenWidth/4));
+        make.leading.equalTo(@10);
+        make.top.equalTo(@(offsetY));
+        make.width.height.equalTo(@(width));
     }];
+    
+    [self loadJsonGif];
 }
 
 -(void)testAnimation {
     
     //UIImageView播放数组动画
-    self.gifView.animationImages= [self loadAnimationImages];
+    self.gifView.animationImages= [self downloadGif];//[self loadAnimationImages];
     self.gifView.animationDuration = 0.4 ;
     self.gifView.animationRepeatCount = MAXFLOAT;
     [self.gifView startAnimating];
@@ -184,6 +197,51 @@
     }
     
     return imageArray;
+}
+
+-(NSArray*)downloadGif {
+    
+    NSString *jsonPath = [[NSBundle mainBundle]pathForResource:@"loading" ofType:@"json"];
+    
+    //获取gif文件数据
+
+    CGImageSourceRef source = CGImageSourceCreateWithURL((CFURLRef)[NSURL fileURLWithPath:jsonPath], NULL);
+
+    //获取gif文件中图片的个数
+
+    size_t count =CGImageSourceGetCount(source);
+
+    //存放所有图片数组
+
+    NSMutableArray <UIImage*>*imageArray = [[NSMutableArray alloc] init];
+
+    //遍历gif
+
+    for(int i=0; i<count; i++) {
+        CGImageRef image = CGImageSourceCreateImageAtIndex(source, i, NULL);
+        UIImage* img = [UIImage imageWithCGImage: image];
+        [imageArray addObject:img];
+    }
+    
+    return imageArray;
+}
+
+-(void)loadJsonGif {
+    
+    LOTAnimationView *animation = [LOTAnimationView animationNamed:@"loading" inBundle:[NSBundle mainBundle]];
+    animation.loopAnimation = YES;
+    [self.view addSubview:animation];
+    [animation playWithCompletion:^(BOOL animationFinished) {
+      // Do Something
+    }];
+    
+    CGFloat width = KMainScreenWidth/4;
+    __weak typeof(self) weakSelf = self;
+    [animation mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(weakSelf.gifView.mas_trailing);
+        make.centerY.equalTo(weakSelf.gifView);
+        make.width.height.equalTo(@(width));
+    }];
 }
 
 

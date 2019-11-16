@@ -12,6 +12,7 @@
 #import "WTFirebaseManager.h"
 #import "WTLogManager.h"
 #import "Fabric/Fabric.h"
+#import "RootTabbarController.h"
 
 @interface AppDelegate ()
 
@@ -38,9 +39,9 @@
     //iPhoneX 适配
     [self updateBarHeightToiPhoneX];
     
-    ViewController *vc = [[ViewController alloc]init];
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
-    self.window.rootViewController = nav;
+    RootTabbarController *tabVC = [[RootTabbarController alloc]init];
+    tabVC.view.frame = self.window.frame;
+    self.window.rootViewController = tabVC;
     
     [self setNavigationBarStyle];
     
@@ -51,6 +52,7 @@
     
     return YES;
 }
+
 
 -(void)updateBarHeightToiPhoneX {
     

@@ -7,6 +7,8 @@ target 'TotalDemo' do
   pod 'AFNetworking'
   pod 'MJRefresh'
   
+  pod 'lottie-ios'
+  
   #Firebase 远程配置
   pod 'Firebase/Core'
   pod 'Firebase/RemoteConfig'

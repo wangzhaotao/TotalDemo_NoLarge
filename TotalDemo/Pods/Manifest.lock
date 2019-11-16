@@ -76,6 +76,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (5.8.0):
     - GoogleUtilities/Logger
+  - lottie-ios (2.5.3)
   - Masonry (1.1.0)
   - MJRefresh (3.2.0)
   - nanopb (0.3.901):
@@ -91,6 +92,7 @@ DEPENDENCIES:
   - Fabric (~> 1.10.2)
   - Firebase/Core
   - Firebase/RemoteConfig
+  - lottie-ios
   - Masonry
   - MJRefresh
 
@@ -107,6 +109,7 @@ SPEC REPOS:
     - FirebaseRemoteConfig
     - GoogleAppMeasurement
     - GoogleUtilities
+    - lottie-ios
     - Masonry
     - MJRefresh
     - nanopb
@@ -124,11 +127,12 @@ SPEC CHECKSUMS:
   FirebaseRemoteConfig: 7e11c65f0769c09bff6947997c209515058c5318
   GoogleAppMeasurement: ffe513e90551844a739e7bcbb1d2aca1c28a4338
   GoogleUtilities: 04fce34bcd5620c1ee76fb79172105c74a4df335
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
 
-PODFILE CHECKSUM: 872055da5dfc5fca6c45e7ff4db35029f6641286
+PODFILE CHECKSUM: 31942f4b524cdb6c156869041ef1f1e2d3429294
 
 COCOAPODS: 1.6.1

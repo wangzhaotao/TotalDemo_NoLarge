@@ -41,6 +41,17 @@
     NSLog(@"堆栈信息: %@", [NSThread callStackSymbols]);
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    NSLog(@"ViewController view will appear...");
+}
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    NSLog(@"ViewController view did appear...");
+}
+
 //正则匹配查找
 -(void)regexSearchString {
     

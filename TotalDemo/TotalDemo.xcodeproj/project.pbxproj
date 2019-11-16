@@ -59,6 +59,7 @@
 		8E8F9200230532B000E94BAD /* WTBlockTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F91FF230532B000E94BAD /* WTBlockTestVC.m */; };
 		8E8F92032305330F00E94BAD /* WTRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F92022305330F00E94BAD /* WTRequestManager.m */; };
 		8E8F92062305382800E94BAD /* WTLightMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F92052305382800E94BAD /* WTLightMode.m */; };
+		8E95F576237F8EBC00CD96E7 /* WTRefreshHeader2.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E95F575237F8EBC00CD96E7 /* WTRefreshHeader2.m */; };
 		8EA04C0F227005E60004E0F2 /* WTCoreImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA04C0E227005E60004E0F2 /* WTCoreImageVC.m */; };
 		8EA85CAB2338D23700AC191B /* WTLocationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA85CAA2338D23700AC191B /* WTLocationVC.m */; };
 		8EA85CB72338F71400AC191B /* WTLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA85CB52338F71400AC191B /* WTLocationManager.m */; };
@@ -95,6 +96,9 @@
 		8ED119FE22B0DF73007C2E65 /* WTHomeKitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED119FD22B0DF73007C2E65 /* WTHomeKitVC.m */; };
 		8ED513FB22F94CDC00DBE8A1 /* BCDrawingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED513FA22F94CDC00DBE8A1 /* BCDrawingVC.m */; };
 		8ED513FE22F94CE700DBE8A1 /* BCFLMotionDistanceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED513FD22F94CE700DBE8A1 /* BCFLMotionDistanceView.m */; };
+		8EE5D2A7237E986D00BE027F /* RootTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5D2A6237E986D00BE027F /* RootTabbarController.m */; };
+		8EE5D2AA237E988700BE027F /* WTTabFirstController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5D2A9237E988700BE027F /* WTTabFirstController.m */; };
+		8EE5D2AC237EAF8D00BE027F /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EE5D2AB237EAF8D00BE027F /* loading.json */; };
 		8EEEB9C622E843D80054ADC6 /* WTCategoryTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEEB9C522E843D80054ADC6 /* WTCategoryTestVC.m */; };
 		8EEEB9C922E844140054ADC6 /* UIImage+OverExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEEB9C822E844140054ADC6 /* UIImage+OverExt.m */; };
 		8EEF49282339B32500D05466 /* WTMapLocationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF49272339B32500D05466 /* WTMapLocationVC.m */; };
@@ -220,6 +224,8 @@
 		8E8F92022305330F00E94BAD /* WTRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTRequestManager.m; sourceTree = "<group>"; };
 		8E8F92042305382800E94BAD /* WTLightMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTLightMode.h; sourceTree = "<group>"; };
 		8E8F92052305382800E94BAD /* WTLightMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTLightMode.m; sourceTree = "<group>"; };
+		8E95F574237F8EBC00CD96E7 /* WTRefreshHeader2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTRefreshHeader2.h; sourceTree = "<group>"; };
+		8E95F575237F8EBC00CD96E7 /* WTRefreshHeader2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTRefreshHeader2.m; sourceTree = "<group>"; };
 		8EA04C0D227005E60004E0F2 /* WTCoreImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCoreImageVC.h; sourceTree = "<group>"; };
 		8EA04C0E227005E60004E0F2 /* WTCoreImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCoreImageVC.m; sourceTree = "<group>"; };
 		8EA85CA92338D23700AC191B /* WTLocationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTLocationVC.h; sourceTree = "<group>"; };
@@ -287,6 +293,11 @@
 		8ED513FA22F94CDC00DBE8A1 /* BCDrawingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDrawingVC.m; sourceTree = "<group>"; };
 		8ED513FC22F94CE700DBE8A1 /* BCFLMotionDistanceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCFLMotionDistanceView.h; sourceTree = "<group>"; };
 		8ED513FD22F94CE700DBE8A1 /* BCFLMotionDistanceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCFLMotionDistanceView.m; sourceTree = "<group>"; };
+		8EE5D2A5237E986D00BE027F /* RootTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootTabbarController.h; sourceTree = "<group>"; };
+		8EE5D2A6237E986D00BE027F /* RootTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootTabbarController.m; sourceTree = "<group>"; };
+		8EE5D2A8237E988700BE027F /* WTTabFirstController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTTabFirstController.h; sourceTree = "<group>"; };
+		8EE5D2A9237E988700BE027F /* WTTabFirstController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTTabFirstController.m; sourceTree = "<group>"; };
+		8EE5D2AB237EAF8D00BE027F /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		8EEEB9C422E843D80054ADC6 /* WTCategoryTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCategoryTestVC.h; sourceTree = "<group>"; };
 		8EEEB9C522E843D80054ADC6 /* WTCategoryTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCategoryTestVC.m; sourceTree = "<group>"; };
 		8EEEB9C722E844140054ADC6 /* UIImage+OverExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+OverExt.h"; sourceTree = "<group>"; };
@@ -457,6 +468,10 @@
 				8ED119F822B0DB4D007C2E65 /* TotalDemo.entitlements */,
 				8E52D09121E054BA00E8BD9C /* AppDelegate.h */,
 				8E52D09221E054BA00E8BD9C /* AppDelegate.m */,
+				8EE5D2A5237E986D00BE027F /* RootTabbarController.h */,
+				8EE5D2A6237E986D00BE027F /* RootTabbarController.m */,
+				8EE5D2A8237E988700BE027F /* WTTabFirstController.h */,
+				8EE5D2A9237E988700BE027F /* WTTabFirstController.m */,
 				8E52D09421E054BA00E8BD9C /* ViewController.h */,
 				8E52D09521E054BA00E8BD9C /* ViewController.m */,
 				8E52D09F21E054BB00E8BD9C /* Info.plist */,
@@ -687,6 +702,7 @@
 		8EAFB439237D4CD7000F9D2E /* RefreshTableVC */ = {
 			isa = PBXGroup;
 			children = (
+				8EE5D2AB237EAF8D00BE027F /* loading.json */,
 				8EAFB443237D7959000F9D2E /* animation.gif */,
 				8EAFB43A237D4CF9000F9D2E /* WTRefreshTableVC.h */,
 				8EAFB43B237D4CF9000F9D2E /* WTRefreshTableVC.m */,
@@ -694,6 +710,8 @@
 				8EAFB43E237D53A2000F9D2E /* WTRefreshHeader.m */,
 				8EAFB440237D6A74000F9D2E /* WTGifRefreshHeader.h */,
 				8EAFB441237D6A74000F9D2E /* WTGifRefreshHeader.m */,
+				8E95F574237F8EBC00CD96E7 /* WTRefreshHeader2.h */,
+				8E95F575237F8EBC00CD96E7 /* WTRefreshHeader2.m */,
 			);
 			path = RefreshTableVC;
 			sourceTree = "<group>";
@@ -941,6 +959,7 @@
 			files = (
 				8E52D0E321E0AAC500E8BD9C /* hi.png in Resources */,
 				8EA85CC62338F86C00AC191B /* super.png in Resources */,
+				8EE5D2AC237EAF8D00BE027F /* loading.json in Resources */,
 				8EA85CC32338F86C00AC191B /* acc.png in Resources */,
 				8E1F7D9D229421C500F51D1A /* RemoteConfigDefaults.plist in Resources */,
 				8E1F7D942294093000F51D1A /* GoogleService-Info.plist in Resources */,
@@ -986,6 +1005,7 @@
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -995,6 +1015,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1057,6 +1078,7 @@
 				8EAFB43F237D53A2000F9D2E /* WTRefreshHeader.m in Sources */,
 				8EA04C0F227005E60004E0F2 /* WTCoreImageVC.m in Sources */,
 				8E52D0D221E07DD100E8BD9C /* UIImage+Extention.m in Sources */,
+				8EE5D2AA237E988700BE027F /* WTTabFirstController.m in Sources */,
 				8EB93D11222FB03E005FAF7B /* WTGuideBaseVC.m in Sources */,
 				8E8F9200230532B000E94BAD /* WTBlockTestVC.m in Sources */,
 				8E18EF422306A32F00D84860 /* NSObject+Ex.m in Sources */,
@@ -1082,6 +1104,7 @@
 				8EBC2584222E493900971CBD /* TestDrawView.m in Sources */,
 				8E52D09621E054BA00E8BD9C /* ViewController.m in Sources */,
 				8E375896222D118100E6CBFB /* WztSpecialCharactEncodeVC.m in Sources */,
+				8E95F576237F8EBC00CD96E7 /* WTRefreshHeader2.m in Sources */,
 				8EB93CF6222F5D6B005FAF7B /* WztUtils.m in Sources */,
 				8E6F8091231E15A40014BDDA /* WTObj.m in Sources */,
 				8E52D0D621E09E8000E8BD9C /* TestVC.m in Sources */,
@@ -1114,6 +1137,7 @@
 				8EA85CBC2338F76500AC191B /* CustomPinAnnotationView.m in Sources */,
 				8EB93CF9222F5F39005FAF7B /* UIViewController+Extension.m in Sources */,
 				8E8A3D2C225DD2A400713A08 /* WTCrashExceptionVC.m in Sources */,
+				8EE5D2A7237E986D00BE027F /* RootTabbarController.m in Sources */,
 				8E5DE2F822C39F2700534A9A /* LargeImageDownsizingViewController.m in Sources */,
 				8ED119FE22B0DF73007C2E65 /* WTHomeKitVC.m in Sources */,
 				8EA85CBD2338F76500AC191B /* MyAnnotation.m in Sources */,
