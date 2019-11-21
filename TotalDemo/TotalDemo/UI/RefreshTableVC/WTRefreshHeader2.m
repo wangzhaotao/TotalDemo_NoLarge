@@ -44,15 +44,26 @@
 - (void)placeSubviews{
     
     [super placeSubviews];
-    self.stateLabel.hidden = YES;
+    self.stateLabel.hidden = NO;
     self.lastUpdatedTimeLabel.hidden = YES;
     
     //
     CGFloat kScreenWidth = [UIScreen mainScreen].bounds.size.width;
-    self.bounds = CGRectMake(0, 0, kScreenWidth, kScreenWidth/4);
-    CGFloat width = self.bounds.size.height;
-    CGFloat height = width;
-    self.animation.frame = CGRectMake((kScreenWidth-width)/2, 5, width, height);
+    CGFloat widthRefresh = kScreenWidth/4;
+    CGFloat heightRefresh = widthRefresh;
+    CGFloat height = heightRefresh+30;
+    self.bounds = CGRectMake(0, 0, kScreenWidth, height);
+    [self.animation mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(@0);
+        make.top.equalTo(@5);
+        make.width.equalTo(@(widthRefresh));
+        make.height.equalTo(@(heightRefresh));
+    }];
+    [self.stateLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(@0);
+        make.top.equalTo(self.animation.mas_bottom);
+        make.height.equalTo(@(30));
+    }];
 }
 
 

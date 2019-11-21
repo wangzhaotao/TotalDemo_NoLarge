@@ -7,7 +7,14 @@ target 'TotalDemo' do
   pod 'AFNetworking'
   pod 'MJRefresh'
   
+  #Lottie动画控件
   pod 'lottie-ios'
+
+  #YYKit
+  pod 'YYKit'
+  
+  #图片加载
+  pod 'SDWebImage'
   
   #Firebase 远程配置
   pod 'Firebase/Core'

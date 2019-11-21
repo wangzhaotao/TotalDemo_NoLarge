@@ -85,6 +85,12 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - Protobuf (3.7.0)
+  - SDWebImage (5.1.0):
+    - SDWebImage/Core (= 5.1.0)
+  - SDWebImage/Core (5.1.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - AFNetworking
@@ -95,6 +101,8 @@ DEPENDENCIES:
   - lottie-ios
   - Masonry
   - MJRefresh
+  - SDWebImage
+  - YYKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -114,6 +122,8 @@ SPEC REPOS:
     - MJRefresh
     - nanopb
     - Protobuf
+    - SDWebImage
+    - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -132,7 +142,9 @@ SPEC CHECKSUMS:
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
+  SDWebImage: fb387001955223213dde14bc08c8b73f371f8d8f
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 31942f4b524cdb6c156869041ef1f1e2d3429294
+PODFILE CHECKSUM: e9f566280f96015a6ce60e819ff59b02ca24f06e
 
 COCOAPODS: 1.6.1

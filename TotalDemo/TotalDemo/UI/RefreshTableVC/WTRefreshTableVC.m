@@ -36,8 +36,7 @@
     
     [self initData];
     
-    [self createRefreshHead4];
-    
+    //[self createRefreshHead4];
     
 }
 
@@ -160,7 +159,7 @@
         make.width.height.equalTo(@(width));
     }];
     
-    [self loadJsonGif];
+    //[self loadJsonGif];
 }
 
 -(void)testAnimation {
